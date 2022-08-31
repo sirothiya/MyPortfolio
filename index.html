@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== webICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="icon.png"
+      type="image/x-icon"
+    />
+    <!----------------CSSfile------------->
+    <link rel="stylesheet" href="style.css"/>
+<!-------------------boxicon-------------------->
+<link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!------------------swiper css------------------>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<!--=============== SWIPER CSS ===============-->
+<link rel="stylesheet" href="swiper-bundle.min.css" />
+
+<!---------------------ICONS------------------>
+<script src="https://kit.fontawesome.com/d8de1da334.js" crossorigin="anonymous"></script>
+<title>Shalini_Sirothiya</title>
+</head>
+   <body class="bdy"> 
+    <!---------------preloader----------------->
+    <div id="preloader"></div>
+    <!-----------header navigation------------>
+    <header class="header" id="header">
+      <nav class="nav container" id="navid">
+        <div class="social-panel-container">
+          <div class="social-panel">
+            <p>Clock <i class="bx bx-time"></i> 
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+            <h4> Current Time is: </h4>
+            <span id="tid"></span>
+            </p>
+            </div>
+        </div>
+      <button class="time"><i class='bx bx-time' ></i></button>
+        <a href="#" class="nav__logo">Shalini</a>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bxs-home" id="homeicon"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="bx bxs-user-pin" id="abouticon"></i>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-book-bookmark" id="skillicon"></i>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#work" class="nav__link">
+                <i class="bx bxs-briefcase-alt-2" id="workicon"></i>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="bx bxs-message-dots" id="contacticon"></i>
+              </a>
+            </li>
+            </ul>
+            </div>
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+            </nav>
+    </header>
+    
+   <!--=============== MAIN ===============-->
+   <main class="main">
+    <!--=============== HOME ===============-->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__data">
+          <span class="home__greeting"> I'm</span>
+          <h1 class="home__name">Shalini Sirothiya</h1>
+          <h2 class="home__greeting"></h2>
+          <h3 class="home__education">
+          Programmer || Web Developer || Computer Geeks 
+          </h3>
+          <div class="home__buttons">
+            <a
+              download=""
+              href="ShaliniResume (1).pdf"
+              class="button button--ghost" onclick="openPopup()"
+            >
+              Download CV
+            </a>
+            <a href="#about" class="button" >About Me</a>
+          </div>
+        </div>
+        <!---=================popup icon======================---->
+        <div class="popup">
+         <div class="popupicon" id="popupid">
+          <img src="404-tick.png">
+          <h2>Successfully Downloaded</h2>
+          <p>My CV is successfully downloaded to your device  </p>
+          <button class="popupbtn" onclick="closePopup()">ok</button>
+         </div>
+
+        </div>
+        <!--=============== ABOUT ===============-->
+      <section class="about section" id="about">
+        <span class="section__subtitle">Introduction</span>
+        <h2 class="section__title" id="section__title">About Me</h2>
+    <div class="about__container container grid">
+          <img src="Shalini_.png" alt="" class="about__img">
+        <div class="about__data">
+            <div class="about__info">
+              <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="about__box">
+            <i class='bx bx-award about__icon' id="icon1"></i>
+            <h3 class="about__title">Experience</h3>
+              <span class="about__subtitle"> webdevelopment + virtual internship with Microsoft .</span>                 </span>
+          </div>
+              </div>
+         <div class="swiper-slide">
+              <div class="about__box">
+                <i class='bx bx-briefcase-alt-2 about__icon' id="icon2"></i>
+                <h3 class="about__title">Completed</h3>
+                  <span class="about__subtitle"> Some Projects + Certificates + Course </span>                </span>
+              </div>
+        </div>
+        <div class="swiper-slide">
+              <div class="about__box">
+                <i class='bx bx-briefcase-alt-2 about__icon' id="icon3"></i>
+                <h3 class="about__title">Technical Knowledge</h3>
+                  <span class="about__subtitle">Languages + DSA + Problem solving</span>                </span>
+              </div>
+        </div>
+        <div class="swiper-slide">
+              <div class="about__box">
+                <i class='bx bx-support about__icon' id="icon4"></i>
+                <h3 class="about__title">Support</h3>
+                  <span class="about__subtitle">Online 24/7</span>                </span>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+        </div>
+        
+      </div>
+      
+            <p class="about__description">
+              I am an undergraduate student pursuing my bachelor's degree in information technology. Strong in design and problem-solving, enthusiastic about coding and web development, and easily adaptable to new technology.
+            </p>
+            <a href="#contact" class="button" id="contactbtn">Contact Me</a>
+            
+      </div>
+      
+    </div>
+  </section>
+      <!--=============== SKILLS ===============-->
+      <section class="skills section" id="skills">
+        <span class="section__subtitle"> Abilities</span>
+        <h2 class="section__title"> Experience</h2>
+        <div class="skills__container container grid">
+          
+                <div class="skills__content">
+                  <h3 class="skills__title">
+                    Web Development Tools:
+                  </h3>
+                  <div class="skills__box">
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i class=' box bx bxs-badge-check'></i>
+                        <div>
+                          <h3 class="skills__name">Html</h3>
+                          <span class="skills__level">Intermediate</span>
+                            <div class="progress_line"><span></span></div>
+                         
+                        </div>
+                      </div>
+      
+                      <div class="skills__data">
+                        <i class='box bx bxs-badge-check'></i>
+                        <div>
+                          <h3 class="skills__name">CSS</h3>
+                          <span class="skills__level">Intermediate</span>
+                        </div>
+                      </div>
+      
+                      
+      
+                     <div class="skills__data">
+                        <i class='box bx bxs-badge-check'></i>
+                        <div>
+                          <h3 class="skills__name">JavaScript</h3>
+                          <span class="skills__level">Basic</span>
+                        </div>
+                      </div> 
+                  </div>
+                    <div class="skills__data">
+                        <i class='box bx bxs-badge-check'></i>
+                        <div>
+                          <h3 class="skills__name">MySQL</h3>
+                          <span class="skills__level">Intermediate
+
+                          </span>
+                        </div>
+                      </div>
+                      <div class="skills__group">
+                        <div class="skills__data">
+                          
+                          <div>
+                            <h3 class="skills__name"></h3>
+                            <span class="skills__level"></span>
+                          </div>
+                        </div>
+        
+                        <div class="skills__data">
+                          
+                          <div>
+                            <h3 class="skills__name"></h3>
+                            <span class="skills__level"></span>
+                          </div>
+                        </div>
+        
+                         <div class="skills__data">
+                         
+                          <div>
+                            <h3 class="skills__name"></h3>
+                            <span class="skills__level"></span>
+                          </div>
+                        </div>
+        
+                         <div class="skills__data">
+                          
+                          <div>
+                            <h3 class="skills__name"></h3>
+                            <span class="skills__level"></span>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+             
+              <!----box2-->
+              
+                <div class="skills__content" id="skills_content1">
+                  <h3 class="skills__title">
+                   Languages:
+                  </h3>
+                  <div class="skills__box">
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i class='box bx bxs-badge-check'></i>
+                        <div>
+                          <h3 class="skills__name">C++(DSA)</h3>
+                          <span class="skills__level">Intermediate</span>
+                        </div>
+                      </div>
+      
+                      <div class="skills__data">
+                        <i class='box bx bxs-badge-check'></i>
+                        <div>
+                          <h3 class="skills__name">Java(core)</h3>
+                          <span class="skills__level">Intermediate</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i class='box bx bxs-badge-check'></i>
+                        <div>
+                          <h3 class="skills__name">Python</h3>
+                          <span class="skills__level">Intermediate</span>
+                        </div>
+                      </div>
+      
+                      <div class="skills__data">
+                        <i class='box bx bxs-badge-check'></i>
+                        <div>
+                          <h3 class="skills__name">Machine Learning</h3>
+                          <span class="skills__level">Intermediate</span>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+             
+              <!----box3-->
+              
+                <div class="skills__content">
+                  <h3 class="skills__title">
+                    Additional Tools
+                  </h3>
+                  <div class="skills__box">
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i class='box bx bxs-badge-check'></i>
+                        <div>
+                          <h3 class="skills__name">Git & Github </h3>
+                          <span class="skills__level">Intermediate</span>
+                        </div>
+                      </div>
+      
+                      <div class="skills__data">
+                        <i class='box bx bxs-badge-check'></i>
+                        <div>
+                          <h3 class="skills__name">VSCODE</h3>
+                          <span class="skills__level">Intermediate</span>
+                        </div>
+                      </div>
+      
+                      <div class="skills__data">
+                        <i class='box bx bxs-badge-check'></i>
+                        <div>
+                          <h3 class="skills__name">Microsoft Azure</h3>
+                          <span class="skills__level">Basic</span>
+                        </div>
+                      </div>
+      
+                    </div>
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i class='box bx bxs-badge-check'></i>
+                        <div>
+                          <h3 class="skills__name">Google Cloud</h3>
+                          <span class="skills__level">Basics</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skills__data">
+                     
+                      <div>
+                        <h3 class="skills__name"></h3>
+                        <span class="skills__level"></span>
+                      </div>
+                    </div>
+    
+                     <div class="skills__data">
+                      
+                      <div>
+                        <h3 class="skills__name"></h3>
+                        <span class="skills__level"></span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+             
+              <!----box4-->
+              
+                <div class="skills__content">
+                  <h3 class="skills__title">
+                    Academic Qualifications
+                  </h3>
+                  <div class="skills__box">
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i class='box bx bxs-badge-check'></i>
+                        <div>
+                          <h3 class="skills__name">Xth: 92% 2018</h3>
+                          <span class="skills__level">Gyanodaya Vidya Mandir,Narsingarh</span>
+                        </div>
+                      </div>
+      
+                      <div class="skills__data">
+                        <i class='box bx bxs-badge-check'></i>
+                        <div>
+                          <h3 class="skills__name">XIIth: 95%(PCM) 2020</h3>
+                          <span class="skills__level">Gyanodaya Vidya Mandir,Narsingarh</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skills__group">
+                      <div class="skills__data">
+                        <i class='box bx bxs-badge-check'></i>
+                        <div>
+                          <h3 class="skills__name">B.tech 9.36cgpa (4th sem) </h3>
+                          <span class="skills__level">TIT (IT, 2020-2024),Bhopal</span>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              </div>
+      </section>
+<!--=============== WORK ===============-->
+      <section class="work section" id="work">
+        <span class="section__subtitle"> Achievements</span>
+        <h2 class="section__title">Projects And Certificates</h2>
+        <div class="work__filters">
+          <span class="work__item active__work" data-filter = 'all'>All</span>
+          <span class="work__item"data-filter ='.web'>Web</span>
+          <span class="work__item" data-filter = '.project'>Projects</span>
+          <span class="work__item" data-filter = '.certificates'>Certificates</span>
+          <span class="work__item" data-filter = '.internships'>Internships</span>
+        </div>
+
+      
+
+        <div class="work_container container grid">
+
+          <div class="work__card mix web project">
+            <img src="spotify.png" alt="" class="work__img">
+            <h3 class="work__title">Spotify Clone</h3>
+            <a href="https://sirothiya.github.io/SPOTIFY-CLONE-Enjoy-The-Music-Enjoy-The-Life/" class="work__button">
+              View Demo <i class='bx bx-right-arrow-alt work_icon'></i>
+            </a>
+            <a href="https://github.com/sirothiya/SPOTIFY-CLONE-Enjoy-The-Music-Enjoy-The-Life" class="work__button">
+              Open on github <i class='bx bx-right-arrow-alt work_icon'></i>
+            </a>
+          </div>
+
+          <div class="work__card mix project">
+            <img src="HMS.png" alt="" class="work__img">
+            <h3 class="work__title">Hospital Mangement System</h3>
+            
+            <a href="HMS.mp4" class="work__button">
+              View Demo <i class='bx bx-right-arrow-alt work_icon'></i>
+            </a>
+            <a href="https://github.com/sirothiya/HOSPITAL-MANAGMENT" class="work__button">
+              Open on github <i class='bx bx-right-arrow-alt work_icon'></i>
+            </a>
+          </div>
+
+          <div class="work__card mix certificates">
+            <img src="perfectElearning.png" alt="" class="work__img">
+            <h3 class="work__title">Python + DSA + MachineLearining </h3>
+            
+            <a href="perfectElearningcertificates.pdf" class="work__button">
+              Completion certificate <i class='bx bx-right-arrow-alt work_icon'></i>
+            </a>
+            
+          </div>
+
+          <div class="work__card mix internships">
+            <img src="FRTintern.png" alt="" class="work__img">
+            <h3 class="work__title">Future Ready Talent(by Microsoft)</h3>
+            
+            <a href="microsoftcertificates.pdf" class="work__button">
+             View Internship Certificate <i class='bx bx-right-arrow-alt work_icon'></i>
+            </a>
+          
+          </div>
+
+          <div class="work__card mix certificates">
+            <img src="codingplatform.png" alt="" class="work__img">
+            <h3 class="work__title">Coding platform</h3>
+            <a href="https://www.hackerrank.com/21shalini" class="work__button">
+              Hackerrank  <i class='fab fa-hackerrank work_icon'></i>
+            </a>
+            <a href="https://auth.geeksforgeeks.org/user/shalini21sirothiya" class="work__button">
+              GFG  <i class='bx bx-right-arrow-alt work_icon'></i>
+            </a>
+            <a href="https://leetcode.com/shalini2024/" class="work__button">
+              Leetcode <i class='bx bx-right-arrow-alt work_icon'></i>
+            </a>
+          
+          </div>
+
+          <div class="work__card mix certificates">
+            <img src="googlecloud.png" alt="" class="work__img">
+            <h3 class="work__title">Google Could</h3>
+            <a href="googleloudcertificate.pdf" class="work__button">
+               View Certificate <i class='bx bx-right-arrow-alt work_icon'></i>
+            </a>
+            <a href="https://www.qwiklabs.com/public_profiles/e07f99c3-e8db-490a-ace3-2b89c85328f3" class="work__button">
+              Show Credential <i class='bx bx-right-arrow-alt work_icon'></i>
+            </a>
+          </div>
+
+          <div class="work__card mix certificates">
+            <img src="participation.png" alt="" class="work__img">
+            <h3 class="work__title">participations</h3>
+           
+            <a href="participationcertificates.pdf" class="work__button">
+              View Certificates <i class='bx bx-right-arrow-alt work_icon'></i>
+            </a>
+            
+          </div>
+        </div>
+      </section>
+
+      <!---=============== TESTIMONIALS ===============-->
+      <section class="testimonial section" id="testimonials">
+        <span class="section__subtitle">Reviews </span>
+        <h2 class="section__title">Testimonial</h2>
+        <div class="testimonial__container container swiper">
+          <div class="testimonial_swiper swiper-wrapper">
+            <div class="testimonial__card swiper-slide" id="tc">
+              <img src="FRTinternshipLogo.jpg" alt="" class="testimonial__img">
+              <h3 class="testimonial__name">Indrani Choudhury</h3>
+              <h4 class="testimonial__name2">Chief Learning Officer,Microsoft India </h4>
+              <p class="testimonial__description">
+               Shalini Sirothiya has  done amazing work with our organization, she has put all her efforts effectively to complete this internship program .She know all the basic concepts of web development andcan transform ideas into a tangible product .she also have an Experience of working with Microsoft Azure and its resources.
+               
+          </p>
+            </div>
+              <div class="testimonial__card swiper-slide">
+              <img src="PELlogo.jpg" alt="" class="testimonial__img">
+              <h3 class="testimonial__name">Ishan Sharma</h3>
+              <h4 class="testimonial__name2">Founder & Director</h4>
+              <p class="testimonial__description">
+                Shalini Sirothiya has completed this Python ,DSA and MachineLearining course with all her sincerity also she has proven herself with her skills and done many projects from basics to advance in this course on Python and MachineLearining.we appreciate all her efforts and wishing her all the very best for her bright future.
+              </p>
+            </div>
+            <div class="testimonial__card swiper-slide">
+              <img src="googlecloudlogo.png"alt="" class="testimonial__img">
+              <h3 class="testimonial__name">Bhoomika Sahu</h3>
+              <h4 class="testimonial__name2">Google Cloud Facilitator</h4>
+              <p class="testimonial__description">
+                shalini has shown great amount of responsibility, sincerity and a
+                genuine willingness to learn and zeal to take on new assignments & challenges. she has learn alot in cloud computing and done great work using it too. It's fun working with her and she also brings new ideas to the table. 
+              </p>
+            </div>
+          </div>
+          <div class=" pagination swiper-pagination " id="swiper-pagination-bullet"></div>
+        </div>
+      </section>
+
+      <!--section class="testimonial section" id="container_section">
+        <div class="testimonial mySwiper">
+            <div class="content swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <img src="FRTinternshipLogo.jpg" class="image">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aliquid aliquam eos repudiandae
+                     commodi odit assumenda dolores, maiores officia nostrum velit sit, numquam illo laborum alias id consequatur, praesentium similique.</p>
+                     <i class='bx bxs-quote-alt-left quote-icon'></i>
+                     <div class="details">
+                        <span class="name">meri mummy</span>
+                        <span class="job">does everything for us</span>
+                     </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="quote.png" alt="" class="image">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aliquid aliquam eos repudiandae
+                         commodi odit assumenda dolores, maiores officia nostrum velit sit, numquam illo laborum alias id consequatur, praesentium similique.</p>
+                         <i class='bx bxs-quote-alt-left quote-icon'></i>
+                         <div class="details">
+                            <span class="name">meri mummy</span>
+                            <span class="job">does everything for us</span>
+                         </div>
+                        </div>
+                    
+            </div>
+            <div class="swiper-button-next nav_btn"></div>
+              <div class="swiper-button-prev nav_btn"></div>
+              <div class="swiper-pagination "></div>
+        </div>
+        </section-->
+      <!--=============== CONTACT ===============-->
+      <section class="contact section" id="contact">
+        <span class="section__subtitle">
+          Get in touch
+        </span>
+        <h2 class="section__title">Contact Me</h2>
+        <div class="container container grid">
+          <div class="contact__content">
+              <h3 class="contact__title">Connect with me on</h3>
+
+              <div class="contact__info">
+                <div class="contact__card">
+                  <i class='bx bx-mail-send contact__card-icon'></i>
+                  <h3 class="contact__card-title">Email</h3>
+                  <span class="contact__card-data">Sirothiyashalini@gmail.com</span>
+
+                  <a href="mailto:sharmanavya1401@gmail.com" target="_blank" class="contact__button">
+                    write me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                  </a>
+                </div>
+
+                <div class="contact__card">
+                  <i class='bx bxl-whatsapp contact__card-icon'></i>
+                  <h3 class="contact__card-title">whatsapp</h3>
+                  <span class="contact__card-data">6263596198</span>
+
+                  <a href="https://api.whatsapp.com/send?phone=+916263596198&text=Hello, want to talk to you !" target="_blank" class="contact__button">
+                    write me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                  </a>
+                </div>
+              </div>
+          </div>
+
+
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Shalini</h1>
+        <ul class="footer__list">
+          <li>
+            <a href="#about" class="footer__link">About</a>
+          </li>
+
+          <li>
+            <a href="#work" class="footer__link">Projects</a>
+          </li>
+          
+          <li>
+            <a href="#testimonial" class="footer__link">Testimonial</a>
+          </li>
+        </ul>
+        
+        <!-- SOCIAL PANEL HTML -->
+        <div class="social-panel-container1">
+          <div class="social-panel1">
+            <p>Created by shalini <i class="fa fa-heart" id="heart"></i> 
+            <button class="close-btn1"><i class="fas fa-times"></i></button>
+            <h4>Get in touch with me</h4>
+            <ul>
+              
+              <li>
+                <a href="https://www.linkedin.com/in/shalini-sirothiya-8407a6216/" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/sirothiya" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/shalini_sirothiya_/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              
+              <li>
+                <a href= "https://t.me/Sirothiyashalini"target="_blank">
+                  <i class="fab fa-telegram"></i>
+                </a>
+              </li>
+              
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=100068756652337" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+        <button class="floating-btn">
+          Get in Touch 
+        </button>
+        <span class="footer__copy">
+          &#169; Shalini_Sirothiya. All rights reserved. 
+        </span>
+
+      </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="mixitup.min.js"></script>
+
+    
+
+ 
+
+        <!--==================swiperfile=============================-->
+         <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+     
+     
+        <!--script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script-->
+  
+   <!---==========PROJECTS JS==========-->
+   <!--script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script-->
+
+ 
+
+     <!-----------------MAIN JS file------------------------------->
+   <script src="script.js"></script>
+   </body>
+
+</html>
